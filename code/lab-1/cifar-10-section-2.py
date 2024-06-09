@@ -1,6 +1,6 @@
 # CIFAR-10 Attack
 # Section 2
-
+fmodel = fb.PyTorchModel(model, bounds=(-1, 1))
 # Apply an adversarial attack
 attack = LinfPGD()
 epsilons = [0.03]
